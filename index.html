@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Task Manager</title>
-</head>
-<body>
-
-</body>
-</html>
 <!-- A page introducing the task manager and showing a list of tasks in a table.
 Index Page (Home):
 
@@ -17,3 +7,55 @@ A short intro paragraph.
 
 Displays a table of tasks. Initially, the table may be empty or contain placeholder tasks.
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Single consistent font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body id="homePage">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add.html">Add Task</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to Task Manager</h1>
+    <p>
+        View your tasks below. Add new tasks on the Add Task page, and they will appear here automatically next time you visit.<br> Go to About Page to change about references
+    </p>
+
+    <table id="taskTable">
+        <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="task-table-body">
+        <!-- Filled by script.js -->
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2024 Task Manager</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

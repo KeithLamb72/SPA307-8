@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
 <!-- An about page with some info, a dropdown menu, and maybe a second form (like a newsletter signup).
 About Page:
 
@@ -19,3 +9,61 @@ Some internal CSS styling in the <style> tag and maybe one element with inline s
 
 Provides information about the application. Contains a dropdown menu and a second form for newsletter signup. Also includes an image and a GIF to showcase different content types.
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        #aboutInfo {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body id="aboutPage">
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add.html">Add Task</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>About This Application</h1>
+    <p id="aboutInfo">
+        This Task Manager helps you stay on top of your schedule. Add tasks with deadlines and priorities, and view them on the Home page. Adjust the app’s appearance on this page. More features in future versions to come!
+    </p>
+
+    <h2>Choose Your Theme</h2>
+    <p style="text-align:center;">Select a theme for the application:</p>
+    <form id="theme-form">
+        <label for="theme-select">Theme:</label>
+        <select id="theme-select" name="theme-select">
+            <option value="light" selected>Light</option>
+            <option value="dark">Dark</option>
+        </select>
+        <button type="submit" class="btn">Save Theme</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2024 Task Manager</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
