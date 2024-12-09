@@ -27,6 +27,7 @@ This project is a simple 3-page Task Manager website created as part of the SBA 
   - Use five different CSS selector
   - Don’t use too many fonts
   - Use colors that complement each other
+  - Use Flexbox
 
 
 - **JavaScript Requirements:**
