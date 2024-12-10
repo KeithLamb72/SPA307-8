@@ -15,8 +15,6 @@ On about.html:
 Demonstrations:
 - Regex, arrays, DOM manipulation, events.
 */
-
-// Global tasks array with a couple of placeholders
 // Load tasks from localStorage or initialize empty
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
@@ -108,7 +106,7 @@ function handleAddTask(event) {
     const dueDate = taskDueInput.value;
     const priority = taskPrioritySelect.value;
 
-    // Regex for task name: at least 3 letters
+    // Regex for task name: whatever
     const nameRegex = /^[A-Za-z ]*[A-Za-z][A-Za-z ]*$/;
     if (!nameRegex.test(taskName)) {
         alert('Task name must be at least acceptable.');
